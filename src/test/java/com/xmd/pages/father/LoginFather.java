@@ -2,6 +2,7 @@ package com.xmd.pages.father;
 import com.xmd.pages.pagesHelper.LoginPageHelper;
 import org.testng.ITestContext;
 import com.xmd.util.SeleniumUtil;
+import com.xmd.base.BasePrepare;
 /**
  * @Classname ：LoginFather
  * @Description ：(这里用一句话描述这个类的作用)

@@ -45,6 +45,13 @@ public class SeleniumUtil {
     }
 
     /**
+     * 退出
+     */
+    public void quit() {
+        driver.quit();
+    }
+
+    /**
      * 最大化浏览器操作
      */
     public void maxWindow(String browserName) {
@@ -68,7 +75,7 @@ public class SeleniumUtil {
             expect = text.substring(text.indexOf(expectText) + 1, text.length() - 1);
         } catch (Exception e) {
             e.printStackTrace();
-            logger.error("failed to find the string [" + expectText + "]");
+            logger.error("failed to find the string [" + expectText + "]",e);
 
         }
 
