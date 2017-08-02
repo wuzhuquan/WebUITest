@@ -1,0 +1,10 @@
+ChromeDriver 2.28
+
+Supports Chrome v55-57
+
+Changes include:
+Fixes a bug which blocked ChromeDriver automation extension from loading and thereby causing window resizing/positioning & screenshot functionalities to break.
+Fixes a bug where NetLog json files were being truncated.
+Fixes a bug which caused ChromeDriver to timeout and/or hang randomly while a dialog is showing.
+Fixes a bug which caused FindElements to fail in some scenarios.
+Various updates to work with Chrome 57+ .

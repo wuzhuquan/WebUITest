@@ -15,6 +15,7 @@ public class LoginPageHelper {
 
    /** 等待登录页元素加载*/
     public static void waitLoginPageToLoad(int timeOut,SeleniumUtil seleniumUtil){
+        seleniumUtil.pause(5000);
         logger.info("登录页面--用户名框加载");
         seleniumUtil.waitForElementToLoad(timeOut, LoginPage.LP_INPUT_USERNAME);
         logger.info("登录页面--密码框加载");
@@ -25,7 +26,18 @@ public class LoginPageHelper {
     }
 
     /**输入数据,登录*/
-    public static void login(int timeOut,SeleniumUtil seleniumUtil,String username,String password){
+    public static void login(int timeOut,SeleniumUtil seleniumUtil,String userName,String userPassword){
+        logger.info("开始输入登录数据");
+        seleniumUtil.sendKeys(LoginPage.LP_INPUT_USERNAME,userName);
+        seleniumUtil.sendKeys(LoginPage.LP_INPUT_PASSWORD,userPassword);
+        logger.info("登录页面，用户名和密码的输入完毕");
+        logger.info("点击提交登录按钮");
+        seleniumUtil.click(LoginPage.LP_BUTTON_SUMMIT);
+        seleniumUtil.pause(3000);
 
+    }
+    /** 校验用户是否登录成功 */
+    public static void verifyLogin(int timeOut,SeleniumUtil seleniumUtil,String expected){
+        seleniumUtil.verifyClubTitle(timeOut,LoginPage.LP_CLUBTITLE,expected);
     }
 }

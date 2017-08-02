@@ -52,6 +52,62 @@ public class SeleniumUtil {
     }
 
     /**
+     * 暂停当前用例的执行，暂停的时间为：sleepTime，单位为毫秒
+     */
+    public void pause(int sleepTime) {
+        if (sleepTime <= 0) {
+            return;
+        }
+        try {
+            Thread.sleep(sleepTime);
+            logger.info("当前进程暂停" + sleepTime + "毫秒。");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    /**点击*/
+    public void click(By by){
+        driver.findElement(by).click();
+        logger.info("点击元素：[" + by + "]");
+    }
+    /**
+     * 验证当前会所
+     *
+     * @param byTitleId
+     *            会所标题的id
+     * @param timeOut
+     *            等待页面加载时间
+     * @param titleName
+     *            期望会所的标题
+     */
+    public void verifyClubTitle(int timeOut, By byTitleId, String titleName) {
+        waitForElementToLoad(timeOut, byTitleId);
+        String title = driver.findElement(byTitleId).getText().trim();
+        isTextCorrect(title, titleName);
+    }
+
+    /**
+     * 判断文本是不是和需求要求的文本一致
+     **/
+    public void isTextCorrect(String actual, String expected) {
+        try {
+            Assert.assertEquals(actual, expected);
+        } catch (AssertionError e) {
+            logger.info("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
+            Assert.fail("期望的文字是 [" + expected + "] 但是找到了 [" + actual + "]");
+        }
+        logger.info("找到了期望的文字: [" + expected + "]");
+    }
+    /**
+     * 原本第二个参数的类型为：CharSequence...，但是注意这里使用CharSequence...输出的为字符的物理地址，
+     * 没有修改为String类型
+     */
+    public void sendKeys(By by, CharSequence... keysToSend) {
+        driver.findElement(by).sendKeys(keysToSend);
+        logger.info("在文本框：【" + by + "】中输入字符：【" + keysToSend[0] + "】。");
+    }
+
+    /**
      * 最大化浏览器操作
      */
     public void maxWindow(String browserName) {
@@ -75,7 +131,7 @@ public class SeleniumUtil {
             expect = text.substring(text.indexOf(expectText) + 1, text.length() - 1);
         } catch (Exception e) {
             e.printStackTrace();
-            logger.error("failed to find the string [" + expectText + "]",e);
+            logger.info("failed to find the string [" + expectText + "]");
 
         }
 

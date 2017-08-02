@@ -3,6 +3,7 @@ package com.xmd.base;
 import com.xmd.util.SeleniumUtil;
 import junit.framework.Assert;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import com.xmd.util.ExcelDataProvider;
@@ -36,7 +37,7 @@ public class BasePrepare {
         // 设置一个testng上下文属性，将driver存起来，之后可以使用context随时取到
         testContext.setAttribute("SELENIUM_DRIVER", seleniumUtil.driver);
     }
-
+    @AfterClass
     public void endTest() {
         if (seleniumUtil.driver != null) {
             seleniumUtil.quit();

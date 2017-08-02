@@ -15,4 +15,5 @@ public class LoginPage {
     //登录失败提醒
     public static final By LP_INFO_FAIL = By.xpath("//*[@id=\"login-dialog\"]/form/div[4]");
 
+    public static final By LP_CLUBTITLE = By.xpath("/html/body/header/div[2]/span");
 }
