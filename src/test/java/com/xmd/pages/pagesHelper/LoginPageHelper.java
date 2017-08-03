@@ -1,7 +1,9 @@
 package com.xmd.pages.pagesHelper;
 import com.xmd.pages.LoginPage;
 import com.xmd.util.SeleniumUtil;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 
 /**
  * @Classname ：LoginPageHelper
@@ -14,7 +16,7 @@ public class LoginPageHelper {
 
    /** 等待登录页元素加载*/
     public static void waitLoginPageToLoad(int timeOut,SeleniumUtil seleniumUtil){
-        seleniumUtil.pause(5000);
+        seleniumUtil.pause(1000);
         logger.info("登录页面--用户名框加载");
         seleniumUtil.waitForElementToLoad(timeOut, LoginPage.LP_INPUT_USERNAME);
         logger.info("登录页面--密码框加载");
@@ -32,11 +34,17 @@ public class LoginPageHelper {
         logger.info("登录页面，用户名和密码的输入完毕");
         logger.info("点击提交登录按钮");
         seleniumUtil.click(LoginPage.LP_BUTTON_SUMMIT);
-        seleniumUtil.pause(3000);
+        seleniumUtil.pause(1000);
 
     }
     /** 校验用户是否登录成功 */
     public static void verifyLogin(int timeOut,SeleniumUtil seleniumUtil,String expected){
         seleniumUtil.verifyClubTitle(timeOut,LoginPage.LP_CLUBTITLE,expected);
     }
+    /**退出当前登录*/
+    public static void logout(int timeOut,SeleniumUtil seleniumUtil){
+    	logger.info("退出当前登录");
+    	seleniumUtil.click(LoginPage.INDEX_LOGOUT);
+    }
+
 }

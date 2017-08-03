@@ -1,11 +1,86 @@
-[2017-08-03 12:23:37] [INFO] RetryCount=0
-[2017-08-03 12:23:37] [INFO] SourceDir=src/test/java/com/xmd/testcase/
-[2017-08-03 12:23:37] [INFO] SourceEncoding=UTF-8
-[2017-08-03 12:23:37] [INFO] 当前操作系统是 [Windows 7]
-[2017-08-03 12:23:37] [INFO] 启动测试浏览器[chrome]
-[2017-08-03 12:23:43] [INFO] loginSuccessTest 测试用例开始执行！
-[2017-08-03 12:23:43] [INFO] loginSuccessTest 测试用例开始执行！
-[2017-08-03 12:23:57] [INFO] loginSuccessTest 测试用例执行成功！
-[2017-08-03 12:23:57] [INFO] loginSuccessTest 测试用例执行成功！
-[2017-08-03 12:23:58] [INFO] 执行成功的用例 = loginSuccessTest
-[2017-08-03 12:23:58] [INFO] 执行成功的用例 = loginSuccessTest
+[2017-08-03 16:43:04] [INFO] RetryCount=0
+[2017-08-03 16:43:04] [INFO] SourceDir=src/test/java/com/xmd/testcase/
+[2017-08-03 16:43:04] [INFO] SourceEncoding=UTF-8
+[2017-08-03 16:43:04] [INFO] 当前操作系统是 [Windows 7]
+[2017-08-03 16:43:04] [INFO] 启动测试浏览器[chrome]
+[2017-08-03 16:43:07] [INFO] 最大化浏览器:chrome
+[2017-08-03 16:43:09] [INFO] 打开测试页面:[http://192.168.1.100:9880/spa-manager/]
+[2017-08-03 16:43:09] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 16:43:09] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 16:43:10] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:10] [INFO] 登录页面--用户名框加载
+[2017-08-03 16:43:10] [INFO] 开始查找元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:10] [INFO] 找到了元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:10] [INFO] 登录页面--密码框加载
+[2017-08-03 16:43:10] [INFO] 开始查找元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:10] [INFO] 找到了元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:10] [INFO] 登录页面--登录按钮加载
+[2017-08-03 16:43:10] [INFO] 开始查找元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:11] [INFO] 找到了元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:11] [INFO] 登录页面加载完成
+[2017-08-03 16:43:12] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:12] [INFO] 登录页面--用户名框加载
+[2017-08-03 16:43:12] [INFO] 开始查找元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:12] [INFO] 找到了元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:12] [INFO] 登录页面--密码框加载
+[2017-08-03 16:43:12] [INFO] 开始查找元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:12] [INFO] 找到了元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:12] [INFO] 登录页面--登录按钮加载
+[2017-08-03 16:43:12] [INFO] 开始查找元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:12] [INFO] 找到了元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:12] [INFO] 登录页面加载完成
+[2017-08-03 16:43:12] [INFO] 开始输入登录数据
+[2017-08-03 16:43:12] [INFO] 在文本框：【By.xpath: //*[@id="user-name"]】中输入字符：【wzq】。
+[2017-08-03 16:43:12] [INFO] 在文本框：【By.xpath: //*[@id="user-pw"]】中输入字符：【123456】。
+[2017-08-03 16:43:12] [INFO] 登录页面，用户名和密码的输入完毕
+[2017-08-03 16:43:12] [INFO] 点击提交登录按钮
+[2017-08-03 16:43:12] [INFO] 点击元素：[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:13] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:13] [INFO] 开始查找元素[By.xpath: /html/body/header/div[2]/span]
+[2017-08-03 16:43:13] [INFO] 找到了元素[By.xpath: /html/body/header/div[2]/span]
+[2017-08-03 16:43:13] [INFO] 找到了期望的文字: [wz测试会所]
+[2017-08-03 16:43:13] [INFO] 退出当前登录
+[2017-08-03 16:43:13] [INFO] 点击元素：[By.xpath: /html/body/header/ul/li[3]]
+[2017-08-03 16:43:13] [INFO] loginSuccessTest 测试用例执行成功！
+[2017-08-03 16:43:13] [INFO] loginSuccessTest 测试用例执行成功！
+[2017-08-03 16:43:13] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 16:43:13] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 16:43:14] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:14] [INFO] 登录页面--用户名框加载
+[2017-08-03 16:43:14] [INFO] 开始查找元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:14] [INFO] 找到了元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:14] [INFO] 登录页面--密码框加载
+[2017-08-03 16:43:14] [INFO] 开始查找元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:14] [INFO] 找到了元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:14] [INFO] 登录页面--登录按钮加载
+[2017-08-03 16:43:14] [INFO] 开始查找元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:14] [INFO] 找到了元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:14] [INFO] 登录页面加载完成
+[2017-08-03 16:43:15] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:15] [INFO] 登录页面--用户名框加载
+[2017-08-03 16:43:15] [INFO] 开始查找元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:15] [INFO] 找到了元素[By.xpath: //*[@id="user-name"]]
+[2017-08-03 16:43:15] [INFO] 登录页面--密码框加载
+[2017-08-03 16:43:15] [INFO] 开始查找元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:15] [INFO] 找到了元素[By.xpath: //*[@id="user-pw"]]
+[2017-08-03 16:43:15] [INFO] 登录页面--登录按钮加载
+[2017-08-03 16:43:15] [INFO] 开始查找元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:15] [INFO] 找到了元素[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:15] [INFO] 登录页面加载完成
+[2017-08-03 16:43:15] [INFO] 开始输入登录数据
+[2017-08-03 16:43:15] [INFO] 在文本框：【By.xpath: //*[@id="user-name"]】中输入字符：【yunying】。
+[2017-08-03 16:43:16] [INFO] 在文本框：【By.xpath: //*[@id="user-pw"]】中输入字符：【123456】。
+[2017-08-03 16:43:16] [INFO] 登录页面，用户名和密码的输入完毕
+[2017-08-03 16:43:16] [INFO] 点击提交登录按钮
+[2017-08-03 16:43:16] [INFO] 点击元素：[By.xpath: //*[@id="login-dialog"]/form/input[2]]
+[2017-08-03 16:43:17] [INFO] 当前进程暂停1000毫秒。
+[2017-08-03 16:43:17] [INFO] 开始查找元素[By.xpath: /html/body/header/div[2]/span]
+[2017-08-03 16:43:47] [INFO] 超时！！！30秒内未找到元素[By.xpath: /html/body/header/div[2]/span]
+[2017-08-03 16:43:47] [WARN] loginSuccessTest 测试用例执行失败！
+[2017-08-03 16:43:48] [INFO] [2017_08_03_16_43_47_loginSuccessTest] 截图成功，保存在：[ result/screenshot/2017_08_03_16_43_47_loginSuccessTest.jpg ]
+[2017-08-03 16:43:48] [WARN] loginSuccessTest 测试用例执行失败！
+[2017-08-03 16:43:49] [INFO] [2017_08_03_16_43_48_loginSuccessTest] 截图成功，保存在：[ result/screenshot/2017_08_03_16_43_48_loginSuccessTest.jpg ]
+[2017-08-03 16:43:51] [INFO] 执行成功的用例 = loginSuccessTest
+[2017-08-03 16:43:51] [INFO] 执行失败的用例 = loginSuccessTest
+[2017-08-03 16:43:51] [INFO] 执行成功的用例 = loginSuccessTest
+[2017-08-03 16:43:51] [INFO] 执行失败的用例 = loginSuccessTest

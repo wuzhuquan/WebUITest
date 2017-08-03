@@ -21,7 +21,7 @@
         <methods>
           <include name="startTest"/>
           <include name="endTest"/>
-          <include name="loginSuccessTest" invocation-numbers="0"/>
+          <include name="loginSuccessTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.xmd.testcase.login.LoginPage_001_LoginSuccess_Test -->
     </classes>

@@ -1,14 +1,20 @@
 package com.xmd.base;
 
 import com.xmd.util.SeleniumUtil;
+
 import junit.framework.Assert;
+
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+
 import com.xmd.util.ExcelDataProvider;
+
 import java.io.IOException;
 import java.util.Iterator;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -47,6 +53,7 @@ public class BasePrepare {
             Assert.fail("浏览器driver没有获得对象,退出操作失败");
         }
     }
+    
 
 /**
  * 测试数据提供者 - 方法

@@ -15,5 +15,6 @@ public class LoginPage_001_LoginSuccess_Test extends LoginFather{
         LoginPageHelper.waitLoginPageToLoad(timeOut,seleniumUtil);
         LoginPageHelper.login(timeOut,seleniumUtil,data.get("LOGIN_NAME"),data.get("LOGIN_PASSWORD"));
         LoginPageHelper.verifyLogin(timeOut,seleniumUtil,data.get("CLUB_NAME"));
+        LoginPageHelper.logout(timeOut, seleniumUtil);
     }
 }

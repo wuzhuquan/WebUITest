@@ -15,4 +15,6 @@ public class LoginPage {
     public static final By LP_INFO_FAIL = By.xpath("//*[@id=\"login-dialog\"]/form/div[4]");
 
     public static final By LP_CLUBTITLE = By.xpath("/html/body/header/div[2]/span");
+    public static final By INDEX_LOGOUT = By.xpath("/html/body/header/ul/li[3]");
+    
 }
