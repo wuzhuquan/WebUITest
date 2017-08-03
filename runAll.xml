@@ -9,7 +9,7 @@
 	<!-- 流程接口以及json数据 -->
 	<parameter name="interface_flow" value="config/interface.properties" />
 	<!-- driver的属性配置文件保存路径 -->
-	<parameter name="driverConfigFilePath" value="config/driver.properties" />
+	<parameter name="driverConfgFilePath" value="config/driver.properties" />
 	<!-- 数据库的备份和还原存放路径 -->
 	<parameter name="databasePath" value="config/database.properties" />
 	<!-- 定义测试的站点地址 -->
@@ -27,6 +27,9 @@
 		<packages>
 			<package name="com.xmd.testcase.login" />
 		</packages>
+		<classes>
+			<class name="com.xmd.testcase.login.LoginPage_001_LoginSuccess_Test"></class>
+		</classes>
 	</test>
 
 	

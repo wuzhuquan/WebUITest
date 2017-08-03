@@ -1,8 +1,7 @@
 package com.xmd.pages.pagesHelper;
 import com.xmd.pages.LoginPage;
 import com.xmd.util.SeleniumUtil;
-
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 /**
  * @Classname ：LoginPageHelper

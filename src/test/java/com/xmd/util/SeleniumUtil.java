@@ -12,7 +12,7 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 /**
  * @Classname ：SeleniumUtil

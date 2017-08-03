@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 import com.xmd.util.ExcelDataProvider;
 import java.io.IOException;
 import java.util.Iterator;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 
 /**
  * @Classname ：BasePrepare
@@ -31,7 +31,8 @@ public class BasePrepare {
         try {
             seleniumUtil.launchBrowser(browserName, context);
         } catch (Exception e) {
-            logger.info("浏览器不能正常工作，请检查是不是被手动关闭或者其他原因");
+
+            logger.error("浏览器不能正常工作，请检查是不是被手动关闭或者其他原因",e);
             Assert.fail("浏览器不能正常工作，请检查是不是被手动关闭或者其他原因");
         }
         // 设置一个testng上下文属性，将driver存起来，之后可以使用context随时取到

@@ -1,0 +1,11 @@
+[2017-08-03 12:23:37] [INFO] RetryCount=0
+[2017-08-03 12:23:37] [INFO] SourceDir=src/test/java/com/xmd/testcase/
+[2017-08-03 12:23:37] [INFO] SourceEncoding=UTF-8
+[2017-08-03 12:23:37] [INFO] 当前操作系统是 [Windows 7]
+[2017-08-03 12:23:37] [INFO] 启动测试浏览器[chrome]
+[2017-08-03 12:23:43] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 12:23:43] [INFO] loginSuccessTest 测试用例开始执行！
+[2017-08-03 12:23:57] [INFO] loginSuccessTest 测试用例执行成功！
+[2017-08-03 12:23:57] [INFO] loginSuccessTest 测试用例执行成功！
+[2017-08-03 12:23:58] [INFO] 执行成功的用例 = loginSuccessTest
+[2017-08-03 12:23:58] [INFO] 执行成功的用例 = loginSuccessTest
