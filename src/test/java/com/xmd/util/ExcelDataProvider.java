@@ -20,7 +20,7 @@ import java.util.Map;
  *               Excel放在Data文件夹下<br>
  *               Excel命名方式：测试类名.xls<br>
  *               Excel的sheet命名方式：测试方法名<br>
- *               Excel第一行为Map键值<br>
+ *               Excel第一列为Map键值<br>
  */
 public class ExcelDataProvider implements Iterator<Object[]> {
 

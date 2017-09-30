@@ -1,6 +1,5 @@
 package com.xmd.util;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -10,14 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
-
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 
 /**
  * @Classname ：SeleniumUtil
  * @Description ：(这里用一句话描述这个类的作用)
- * @Author ：xuph
+ * @Author ：wuzq
  * @Date ：2017/7/29
  */
 public class SeleniumUtil {

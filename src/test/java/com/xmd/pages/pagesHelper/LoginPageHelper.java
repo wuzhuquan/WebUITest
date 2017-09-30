@@ -3,7 +3,6 @@ import com.xmd.pages.LoginPage;
 import com.xmd.util.SeleniumUtil;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 
 /**
  * @Classname ：LoginPageHelper
@@ -16,7 +15,7 @@ public class LoginPageHelper {
 
    /** 等待登录页元素加载*/
     public static void waitLoginPageToLoad(int timeOut,SeleniumUtil seleniumUtil){
-        seleniumUtil.pause(1000);
+        seleniumUtil.pause(500);
         logger.info("登录页面--用户名框加载");
         seleniumUtil.waitForElementToLoad(timeOut, LoginPage.LP_INPUT_USERNAME);
         logger.info("登录页面--密码框加载");

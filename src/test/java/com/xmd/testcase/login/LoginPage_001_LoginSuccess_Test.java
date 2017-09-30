@@ -3,7 +3,6 @@ package com.xmd.testcase.login;
 import com.xmd.pages.father.LoginFather;
 import com.xmd.pages.pagesHelper.LoginPageHelper;
 import org.testng.ITestContext;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Map;
